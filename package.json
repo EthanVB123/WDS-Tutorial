@@ -1,5 +1,5 @@
 {
-  "name": "WDS-Tutorial",
+  "name": "wds-tutorial",
   "version": "1.0.0",
   "description": "From the Web Dev Simplified channel's Full Stack Web Development course - thanks guys!",
   "main": "server.js",
