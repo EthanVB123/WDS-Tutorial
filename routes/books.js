@@ -35,12 +35,12 @@ router.post('/', upload.single('cover'), async (req, res) => {
         description: req.body.description
     })
 
-    //try {
+    try {
         const newBook = await book.save()
         res.redirect('books')
-    //} catch {
-    //    renderNewPage(res, book, true)
-    //}
+    } catch {
+        renderNewPage(res, book, true)
+    }
 })
 
 async function renderNewPage(res, book, hasError = false) {
