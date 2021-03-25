@@ -4,7 +4,7 @@ const router = express.Router()
 
 // All Authors Route
 router.get('/', async (req, res) => {
-    /* let searchOptions = {name: null}
+    let searchOptions = {name: null}
     if (req.query.name != null && req.query.name !== '') {
         searchOptions.name = new RegExp(req.query.name, 'i')
     } else {
@@ -15,8 +15,7 @@ router.get('/', async (req, res) => {
         res.render('authors/index', {authors: authors, searchOptions: req.query})
     } catch {
         res.redirect('/')
-    } */
-    res.send('All authors')
+    } 
 })
 
 // New Author Route
